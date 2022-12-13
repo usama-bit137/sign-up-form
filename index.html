@@ -4,31 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up Form</title>
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
     <div class="container">
+    </br>
+        <img src="background.jpg" class="bg">
+        <div class="banner"></div>
         <div class="form">
-            <fieldset>
-                <label for="first-name">FIRST NAME</label></br>
-                <input type= "text" id="first-name"></br>
+                <div class="intro-text">
+                This is not a real online service! You know you need to do something
+                like this in your life to help you realise your deepest dreams. 
+                </br>Sign up <em>now</em> to get started. 
+                <p>You know you want to.</p>
+                <p>Let's do this!</p>
+            </div>
+            <fieldset id="sign-up">
+                <div>
+                <label for="first-name">FIRST NAME</label>
+                </div>
+                <input type= "text" id="first-name">
+                
+                <div>
+                <label for="first-name">LAST NAME</label>
+                </div>
+                <input type= "text" id="last-name">
 
-                <label for="first-name">LAST NAME</label></br>
-                <input type= "text" id="last-name"></br>
+                <div>
+                <label for="email">EMAIL</label>
+                </div>
+                <input type= "text" id="email">
 
-                <label for="email">EMAIL</label></br>
-                <input type= "text" id="email"></br>
-
-                <label for="phone">PHONE</label></br>
-                <input type= "text" id="phone"></br>
-
-                <label for="password">PASSWORD</label></br>
-                <input type= "text" id="password"></br>
-
-                <label for="confirm-password">CONFIRM PASSWORD</label></br>
-                <input type= "text" id="confirm-password"></br>
+                <div>
+                <label for="phone">PHONE</label>
+                </div>
+                <input type= "text" id="phone">
+                
+                <div>
+                <label for="password">PASSWORD</label>
+                </div>
+                <input type= "password" id="password">
+                
+                <div>
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                </div>
+                <input type= "password" id="confirm-password">
             </fieldset>
+
+            <button class="create">Create Account</button></br>
+            <div class="login">Already have an account? <a href ='#' class ="link">Login</a></div>
+
         </div>
     </div>
 </body>
