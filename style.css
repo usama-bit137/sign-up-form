@@ -1,30 +1,63 @@
-
 :root{
-    --green-color: #4456f
+    --font-size: 40px; 
+    --green-color:#465957; 
+    --darkgreen-color: #3a4848; 
+    --tan-color: #d9a576;
+    --grey-color: #798c8a;
+    --offwhite-color: #dbd4d2;
 }
 
-*{
-   /* border: 2px solid red;*/
+* {
+    /*border: 4px solid red; */
 }
 
 body {
     padding:0; 
     margin: 0; 
+    border: 0; 
 }
 
 .container{
     display: flex; 
-    height: 100%
+    height: 100%;
+    width: 100%;  
 }
 
-.banner{
-    width: 100px; 
+.banner-parent{
+    position: relative;
+    top: 0; 
+    left: 0;
+}
+
+.odin{
+    display: block;
     height: 100px; 
-    background-color: black;
+    width: auto; 
 }
 
 .bg{
-    height: 100%; 
+    height: 100%;
+    position: relative; 
+    top: 0; 
+    left: 0;  
+    /*opacity: 50%; */
+}
+
+.banner{
+    width: 100%; 
+    height: 300px; 
+    opacity: 50%;
+    background-color: black;
+    position: absolute; 
+    top: 5%; 
+    left: 0px; 
+    font-size: 3rem;
+    color: white; 
+    font-family: 'Norse Bold';
+    text-align: center;
+    border:2px solid black; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .form{
@@ -32,35 +65,51 @@ body {
     color: black;
     left: 500px; 
     top: 25%; 
-    width: 1000px; 
-    padding: 0 50px;
+    /*border: 2px solid red; */
+    background-color: var(--green-color);
+    width: 100%; 
+    /*padding: 50px; */
+    
 }
 
 .intro-text{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px; 
+    width: 1000px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--font-size); 
     font-weight: bold;
-    padding: 10px 100px 0 0;
+    padding: 50px 50px;
+    width: 1000px; 
+    color: var(--offwhite-color); 
 }
 
 
+fieldset{
+    border: 0 none; 
+}
 
 #sign-up{
-    box-shadow: 0 0 4px 0 black; 
-    width: 1000px; 
+    outline: none; 
+    box-shadow: 0 10px 10px 0 black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
-    color: rgb(40, 40, 40);
-    display: grid; 
-    grid-template-columns: 1fr 1fr ;
-    row-gap: 10px;
-    column-gap: 20px;
-    padding: 50px; 
+    color: var(--green-color);
+    
+    background-color: var(--grey-color);
+    width: 100%;
+    padding: 10px 50px 50px 50px; 
+    flex-flow: row wrap; 
+}
+
+.lets{
+    font-size: var(--font-size);
+    color: var(--offwhite-color);
+    font-weight: bold; 
 }
 
 #sign-up>input{ 
     border-radius: 5px;
-    border: 1px solid rbg(42, 40, 40); 
+    width: 500px; 
+    border: 1px solid rgb(42, 40, 40); 
 }
 
 #sign-up>label{
@@ -73,25 +122,30 @@ body {
 }
 
 input, label{
-    display: block;
+    flex-flow: row wrap;
 }
 
 .create{
-    background-color: #44564f;
+    background-color: var(--grey-color);
     color: white; 
     padding: 20px; 
+    margin-left: 50px;
     border-radius: 10px;
     font-weight: bold;
     border: 0px; 
+    box-shadow: 0 10px 10px 0 black;
 }
 
 .login{
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px; 
+    font-weight: bold;
+    color: var(--offwhite-color); 
+    padding: 0 50px; 
 }
 
 .link{
-    color: #44564f; 
+    color: var(--tan-color); 
     text-decoration: none;
 }
 
