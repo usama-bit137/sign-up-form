@@ -5,6 +5,7 @@
     --tan-color: #d9a576;
     --grey-color: #798c8a;
     --offwhite-color: #dbd4d2;
+    --font-stack: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -23,6 +24,12 @@ body {
     width: 100%;  
 }
 
+@media only screen and (max-width: 2000px) {
+    .banner-parent, .odin, .bg, .banner {
+      display: none;
+    }
+}
+
 .banner-parent{
     position: relative;
     top: 0; 
@@ -33,6 +40,7 @@ body {
     display: block;
     height: 100px; 
     width: auto; 
+    
 }
 
 .bg{
@@ -45,7 +53,7 @@ body {
 
 .banner{
     width: 100%; 
-    height: 300px; 
+    height: 200px; 
     opacity: 50%;
     background-color: black;
     position: absolute; 
@@ -53,32 +61,29 @@ body {
     left: 0px; 
     font-size: 3rem;
     color: white; 
-    font-family: 'Norse Bold';
+    font-family: var(--font-stack);
     text-align: center;
-    border:2px solid black; 
+    border:2.5px solid black; 
     padding: 0; 
     margin: 0; 
 }
 
 .form{
+    height: 1150px;
     font-size: 50px; 
     color: black;
-    left: 500px; 
     top: 25%; 
-    /*border: 2px solid red; */
     background-color: var(--green-color);
-    width: 100%; 
-    /*padding: 50px; */
-    
+    width: 1000px; 
+    margin: 0; 
+    flex:1 0 auto; 
 }
 
 .intro-text{
-    width: 1000px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:var(--font-stack);
     font-size: var(--font-size); 
     font-weight: bold;
     padding: 50px 50px;
-    width: 1000px; 
     color: var(--offwhite-color); 
 }
 
@@ -90,14 +95,12 @@ fieldset{
 #sign-up{
     outline: none; 
     box-shadow: 0 10px 10px 0 black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+    font-family: var(--font-stack);
+    font-size: 25px;
     color: var(--green-color);
-    
     background-color: var(--grey-color);
-    width: 100%;
-    padding: 10px 50px 50px 50px; 
-    flex-flow: row wrap; 
+    padding: 10px 50px 100px 50px; 
+    line-height: 2rem;
 }
 
 .lets{
@@ -106,23 +109,22 @@ fieldset{
     font-weight: bold; 
 }
 
-#sign-up>input{ 
+.group>input{ 
     border-radius: 5px;
-    width: 500px; 
+    width: 450px; 
     border: 1px solid rgb(42, 40, 40); 
 }
 
-#sign-up>label{
+.group>label{
     width: 175px; 
 }
 
-#sign-up>input:hover{
-    box-shadow: 0px 0px 2px 0px black; 
-    border: 1px solid rgb(44, 136, 222); 
+.group>input:hover{
+    border: 3px solid rgb(44, 136, 222); 
 }
 
-input, label{
-    flex-flow: row wrap;
+.group{
+    display:inline-block; 
 }
 
 .create{
@@ -134,10 +136,11 @@ input, label{
     font-weight: bold;
     border: 0px; 
     box-shadow: 0 10px 10px 0 black;
+    font-family: var(--font-stack); 
 }
 
 .login{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-stack); 
     font-size: 25px; 
     font-weight: bold;
     color: var(--offwhite-color); 

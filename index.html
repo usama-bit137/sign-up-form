@@ -11,7 +11,10 @@
     <div class="container">
         <div class="banner-parent">
             <img src="background.jpg" class="bg">
-            <div class="banner"><img src="odin-lined.png" class="odin">Llama Studios</div>
+            <div class="banner">
+                <!--<img src="odin-lined.png" class="odin">-->
+                <p>Llama Studios</p>
+            </div>
         </div>
         
         <div class="form">
@@ -24,42 +27,45 @@
 
             <fieldset id="sign-up">
                 <p class="lets">Let's do this!</p>
-                <div>
-                <label for="first-name">*FIRST NAME</label>
-                </div>
+                <div class="group">
+                <label for="first-name">*FIRST NAME</label> </br>
                 <input type= "text" id="first-name" required>
-                
-                <div>
-                <label for="first-name">*LAST NAME</label>
                 </div>
+                
+                <div class="group">
+                <label for="first-name">*LAST NAME</label></br>
                 <input type= "text" id="last-name" required>
-
-                <div>
-                <label for="email">*EMAIL</label>
                 </div>
+
+                <div class="group">
+                <label for="email">*EMAIL</label></br>
                 <input type= "text" id="email" required>
+                </div>
 
-                <div>
-                <label for="phone">*PHONE</label>
-                </div>
+                <div class="group">
+                <label for="phone">*PHONE</label></br>
                 <input type= "text" id="phone" required>
-                
-                <div>
-                <label for="password">*PASSWORD</label>
                 </div>
+
+                <div class="group">
+                <label for="password">*PASSWORD</label></br>
                 <input type= "password" id="password" minlegth="5" required>
-                
-                <div>
-                <label for="confirm-password">*CONFIRM PASSWORD</label>
                 </div>
-                <input type= "password" id="confirm-password" minlength= "5" required>
                 
+                <div class="group">
+                <label for="confirm-password">*CONFIRM PASSWORD</label></br>
+                <input type= "password" id="confirm-password" minlength= "5" required>
+                </div>
             </fieldset>
+            
             </br>
+            
             <div class="button">
             <button class="create">Create Account</button></br>
             </div>
+            
             </br>
+            
             <div class="login">Already have an account? <a href ='#' class ="link">Login</a></div>
 
         </div>
