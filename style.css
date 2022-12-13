@@ -5,6 +5,7 @@
     --tan-color: #d9a576;
     --grey-color: #798c8a;
     --offwhite-color: #dbd4d2;
+    --blue-border-color: rgb(44, 136, 222); 
     --font-stack: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -24,7 +25,7 @@ body {
     width: 100%;  
 }
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1000px) {
     .banner-parent, .odin, .bg, .banner {
       display: none;
     }
@@ -119,8 +120,18 @@ fieldset{
     width: 175px; 
 }
 
-.group>input:hover{
-    border: 3px solid rgb(44, 136, 222); 
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.group>input:focus{    
+    border: 4px solid var(--blue-border-color); 
+    box-shadow: 0 2px 2px 0 var(--darkgreen-color);
+}
+
+#password:invalid, #confirm-password:invalid{
+    border: 3px solid rgb(175, 15, 15); 
 }
 
 .group{
@@ -128,7 +139,7 @@ fieldset{
 }
 
 .create{
-    background-color: var(--grey-color);
+    background-color: var(--tan-color);
     color: white; 
     padding: 20px; 
     margin-left: 50px;
